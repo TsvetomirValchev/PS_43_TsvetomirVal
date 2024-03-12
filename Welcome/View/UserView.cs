@@ -18,7 +18,7 @@ namespace Welcome.View
 
         public void Display() {
             
-            Console.WriteLine($"Welcome /nUser: {_viewModel.Name} /nRole: {_viewModel.Role}");
+            Console.WriteLine($"Welcome! \nUser: {_viewModel.Name} \nRole: {_viewModel.Role}");
 
         }
     }
