@@ -1,10 +1,5 @@
-﻿using System.Data;
-using Welcome.Model;
-using Welcome.View;
-using Welcome.ViewModel;
+﻿using Welcome.Model;
 using WelcomeExtended.Data;
-using WelcomeExtended.Loggers;
-using WelcomeExtended.Others;
 using static WelcomeExtended.Others.Delegates;
 
 namespace WelcomeExtended
@@ -13,42 +8,29 @@ namespace WelcomeExtended
     {
         static void Main(string[] args)
         {
-			try
-			{
-				//var user = new User
-				//{
-				//	Name = "Desislava",
-				//	Password = "password",
-				//	Role = Welcome.Others.UserRolesEnums.STUDENT
-				//};
+            try
+            {
 
-				//var viewModel = new UserViewModel(user);
+                UserData userData = new UserData();
 
-				//var view = new UserView(viewModel);
+                User student = new User()
+                {
+                    Name = "Pesho",
+                    Password = "password",
+                    Role = Welcome.Others.UserRolesEnums.STUDENT
+                };
+                userData.AddUser(student);
 
-				//view.Display();
-
-				//view.DisplayErr();
-
-				UserData userData = new UserData();
-
-				User student = new User()
-				{
-					Name = "Desislava",
-					Password = "password",
-					Role = Welcome.Others.UserRolesEnums.STUDENT
-				};
-				userData.AddUser(student);
-			}
-			catch (Exception e)
-			{
-				var log = new ActionOnError(Log);
-				log(e.Message);
-			}
-			finally
-			{
-				Console.WriteLine("Executed in any case");
-			}
+            }
+            catch (Exception e)
+            {
+                var log = new ActionOnError(Log);
+                log(e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executed in any case");
+            }
         }
     }
 }

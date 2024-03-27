@@ -1,8 +1,5 @@
-﻿using System;
-using DataLayer.Model;
-using System.Data;
+﻿using DataLayer.Model;
 using Microsoft.EntityFrameworkCore;
-using Welcome.Others;
 using static Welcome.Others.UserRolesEnums;
 
 namespace DataLayer.Database
