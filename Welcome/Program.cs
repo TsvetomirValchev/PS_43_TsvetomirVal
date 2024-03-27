@@ -1,6 +1,7 @@
 ﻿using Welcome.Model;
 using Welcome.ViewModel;
 using Welcome.View;
+using static Welcome.Others.UserRolesEnums;
 
 namespace Welcome
 {
@@ -11,7 +12,7 @@ namespace Welcome
             User user = new();
             user.Names = "joe";
             user.Password = "Most seured password ever";
-            user.Role = Welcom.Others.UserRolesEnums.PROFESSOR;
+            user.Role = PROFESSOR;
             UserViewModel userViewModel = new UserViewModel(user);
             UserView userView = new UserView(userViewModel);
             userView.Display();

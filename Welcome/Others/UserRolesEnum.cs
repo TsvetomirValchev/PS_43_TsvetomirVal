@@ -1,4 +1,4 @@
-﻿namespace Welcom.Others {
+﻿namespace Welcome.Others {
 
 
     public enum UserRolesEnums { 

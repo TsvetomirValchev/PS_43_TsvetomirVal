@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Welcom.Others;
+﻿using Welcom.Others;
 using Welcome.Model;
 
 namespace Welcome.ViewModel
 {
-    internal class UserViewModel
+    public class UserViewModel
     {
         private User _user;
 
