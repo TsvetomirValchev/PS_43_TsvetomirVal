@@ -34,7 +34,7 @@ namespace DataLayer.Database
                 Name = "user1",
                 Password = "11111111111secure",
                 Role = UserRolesEnums.ADMIN,
-                Expires = DateTime.Now.AddYears(10),
+                Expires = DateTime.Now.AddYears(50),
                 Email = "user@example.com",
                 FacultyNumber = "381"
             };
@@ -54,7 +54,7 @@ namespace DataLayer.Database
                 Name = "user3",
                 Password = "supersecure",
                 Role = UserRolesEnums.PROFESSOR,
-                Expires = DateTime.Now.AddYears(10),
+                Expires = DateTime.Now.AddYears(20),
                 Email = "kircho@example.com",
                 FacultyNumber = "831"
             };
