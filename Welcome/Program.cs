@@ -9,8 +9,8 @@ namespace Welcome
         static void Main(string[] args)
         {
             User user = new();
-            user.Name = "Desislava";
-            user.Password = "12345";
+            user.Name = "Az";
+            user.Password = "mysecretpassword";
             user.Role = Others.UserRolesEnums.STUDENT;
             UserViewModel userViewModel = new UserViewModel(user);
             UserView userView = new UserView(userViewModel);
