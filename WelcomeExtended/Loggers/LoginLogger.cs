@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 public class LoginLogger
 {
     private readonly string _successLogPath = "SuccessLog.txt";

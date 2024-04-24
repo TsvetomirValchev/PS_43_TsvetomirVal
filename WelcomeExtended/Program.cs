@@ -1,11 +1,6 @@
-﻿using System.Data;
-using Welcome.Model;
-using Welcome.View;
+﻿using Welcome.Model;
 using Welcome.Others;
-using Welcome.ViewModel;
 using WelcomeExtended.Data;
-using WelcomeExtended.Loggers;
-using WelcomeExtended.Others;
 using static WelcomeExtended.Others.Delegates;
 
 namespace WelcomeExtended
